@@ -30,7 +30,7 @@ const Weather = () => {
         {result && <h1 style={{ color: 'white' }}>{result.name} {result.sys.country}</h1>}
 
         <div className="d-flex align-items-center justify-content-center">
-          <input type="text" placeholder="Enter city name" onChange={(e) => setSearch(e.target.value)} className="form-control w-50 mr-2" style={{ maxWidth: '300px' }} />
+          <input type="text" placeholder="addis ababa" onChange={(e) => setSearch(e.target.value)} className="form-control w-50 mr-2" style={{ maxWidth: '300px' }} />
           <button onClick={searchPressed} className="btn btn-primary">Search</button>
         </div>
 
@@ -45,7 +45,7 @@ const Weather = () => {
             </div>
             <h3>Humidity: {result.main.humidity}</h3>
             <p>Condition: {result.weather[0].description}</p>
-          </div>
+          <p>dev by muluken1393@gmail.com</p></div>
         )}
       </div>
     </div>
